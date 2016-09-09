@@ -11,6 +11,10 @@ module.exports =
       'open-html-in-browser:open': ({target}) =>
         @open(target.getModel().getPath())
     ))
+    @subscriptions.add(atom.commands.add('atom-text-editor[data-grammar~="htm"]',
+      'open-html-in-browser:open': ({target}) =>
+        @open(target.getModel().getPath())
+    ))
     @subscriptions.add(atom.commands.add('.tree-view',
       'open-html-in-browser:selected-entry': ({currentTarget: target}) =>
         entry =  target?.querySelector('.selected .name')
