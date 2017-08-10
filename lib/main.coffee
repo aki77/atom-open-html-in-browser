@@ -8,8 +8,8 @@ module.exports =
   activate: ->
     @subscriptions = new CompositeDisposable
     @subscriptions.add(atom.commands.add('atom-text-editor[data-grammar~="html"]',
-      'open-html-in-browser:open': ({target}) =>
-        @open(target.getModel().getPath())
+      'open-html-in-browser:open': ({currentTarget}) =>
+        @open(currentTarget.getModel().getPath())
     ))
     @subscriptions.add(atom.commands.add('.tree-view',
       'open-html-in-browser:selected-entry': ({currentTarget: target}) =>
