@@ -18,7 +18,7 @@ edit `~/.atom/keymap.cson`
 
 ```coffeescript
 'atom-text-editor[data-grammar~="html"]':
-  'open-html-in-browser:open'
+  'ctrl-shift-q': 'open-html-in-browser:open'
 '.tree-view':
   'shift-o': 'open-html-in-browser:selected-entry'
 ```
