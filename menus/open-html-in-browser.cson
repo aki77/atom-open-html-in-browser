@@ -5,3 +5,9 @@
       'command': 'open-html-in-browser:selected-entry'
     }
   ]
+  '.tree-view .file .name[data-name$="htm"]': [
+    {
+      'label': 'Open Browser'
+      'command': 'open-html-in-browser:selected-entry'
+    }
+  ]
